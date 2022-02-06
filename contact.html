@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <!-- <base href="https://www.icecode.com/" /> -->
+    <title>Ice Code - T.J. Jackson</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1><span class="header-Ice">ICE</span> <span class="header-Code">Code</span></h1>
+      <h2>R. <i>"T.J."</i> Jackson (<span id="ageCalc">I wish I was 23 again</span>)</h2>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <a class="nav-button" href="index.html">Home</a>
+      <a class="nav-button" href="resume.html">Resume</a>
+      <a class="nav-button" href="portfolio.html">Portfolio</a>
+      <a class="nav-button" href="contact.html">Contact</a>      
+    </nav>
+
+    <!-- MAIN SECTION CONTACT ME-->
+    <main>
+      <h2 class="title">Contact Me</h2>
+      <hr>
+      <h3>Email</h3>
+
+      <a href="mailto:archaicknight86@aol.com">Email me here</a>
+      <br><br>
+      <hr class="lightHR">
+
+      <form class="emailForm">
+          <label for="senderName">Your Name:</label> <br>
+          <input type="text" name="senderName" id="senderName" required>
+          <br><br>
+          <label for="senderEmail">Your Email: <i class="subText">(To get back in touch with you)</i></label><br>
+          <input type="text" name="senderEmail" id="senderEmail" required>
+          <br><br>
+          <label for="emailArea">Your message:</label> <br>
+          <textarea name="emailArea" id="emailArea" cols="30" rows="10" maxlength="500" placeholder="Type email message here..." required></textarea>
+          <br><br>
+          <input type="submit" value="Send Email">
+          <input class="align-right" type="reset" value="Reset">
+      </form>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>IceCode &#169 <span id="copyrightYear"></span></p>
+    </footer>
+
+    <!-- Auto running scripts when page loads -->
+    <script>
+      /* Age Calculator */
+var birthDate = new Date(1986, 11, 05, 01, 09); /* My birthday 12/05/2986 @ 1:09AM */
+    var today = new Date();
+    
+    var years = (today.getFullYear() - birthDate.getFullYear());
+
+    if (today.getMonth() < birthDate.getMonth() || 
+        today.getMonth() == birthDate.getMonth() && 
+        today.getDate() < birthDate.getDate()) {
+        years--;
+    }
+    document.getElementById("ageCalc").innerHTML = years;
+
+      /*Copyright Year Calculator*/
+    document.getElementById("copyrightYear").innerHTML = today.getFullYear();
+    </script>
+  </body>
+</html>

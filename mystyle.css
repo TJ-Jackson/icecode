@@ -1,0 +1,266 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* |*** |**\  |**  /***   |  |      /***  /***  /***      |  |  |***  |**\  |*** */
+/* |==  |==/  |==  \===\  |==|     |      \===\ \===\     |==|  |==   |==/  |==  */
+/* |    |  \  |__   ___/  |  | ___  \___   ___/  ___/ ___ |  |  |___  |  \  |___ */
+
+body {
+    background-color: #00dfff;
+    background-image: url(images/blueCircuit.jpg);
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 223, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+}
+
+.header-Ice {
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 4px #546a7b;
+}
+
+.header-Code {
+    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+    color: #e98a15;
+    text-shadow: 2px 2px 4px #546a7b;
+}
+
+h2{
+    background-color: #fbfbff;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px 80px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #00dfff;
+    padding: 7px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-button {
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #10100f;
+    background-color: #fbfbff;
+    padding: 10px;
+    color: #546a7b;
+    letter-spacing: 1px;
+    vertical-align: center;
+    text-align: center;
+    transition: 0.25s ease-in-out;
+}
+
+.nav-button:hover {
+    background-color: #e98a15;
+    color: #10100f;
+    box-shadow: #f5a544 5px 5px;
+}
+
+main {
+    background-color: #fbfbff;
+    margin: 20px 50px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 1.25;
+}
+
+.section-button, h4 {
+    background-color: #fbfbff;
+    border: none;
+    text-decoration: none;
+    display: block;
+    font-size: 1.25em;
+    text-shadow: 1px 1px 2px #546a7b;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-weight: 900;
+    border-left: 4px solid #e98a15;
+    padding-left: 20px;
+}
+
+.resumeList {
+    padding-left: 25px;
+    letter-spacing: 1px;
+}
+
+.eduList>li {
+    padding-left: 25px;
+    letter-spacing: 1px;
+}
+
+.skillList {
+    padding-left: 35px;
+    letter-spacing: 1px;
+}
+
+.lightHR {
+    color: rgba(84, 106, 123, 0.3);
+}
+
+.direction {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.Fun ul {
+    margin: 10px 25px;
+}
+
+.Fun li {
+    font-weight: bold;
+    line-height: 2;
+}
+
+.align-right {
+    float: right;
+}
+
+.subText {
+    font-size: .75em;
+}
+
+textarea {
+    width: 100%;
+}
+
+.emailForm {
+    line-height: 1.25;
+}
+
+/*Use JS to reveal the trait descriptions when clicked*/
+
+.Determination {
+    display: none;
+}
+
+.Leadership {
+    display: none;
+}
+
+.Support {
+    display: none;
+}
+
+.Hardworker {
+    display: none;
+}
+
+.Fun {
+    display: none;
+}
+
+.footer {
+    background-color: rgba(0, 223, 255, 0.7);
+    color: #fbfbff;
+    text-shadow: 2px 2px 4px #546a7b;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+@media (max-width: 576px){
+    h2 {
+        margin: 5px 20px;
+        padding: 5px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 15px 10px;
+    }
+}

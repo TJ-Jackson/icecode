@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <!-- <base href="https://www.icecode.com/" /> -->
+    <title>Ice Code - T.J. Jackson</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1><span class="header-Ice">ICE</span> <span class="header-Code">Code</span></h1>
+      <h2>R. <i>"T.J."</i> Jackson (<span id="ageCalc">I wish I was 23 again</span>)</h2>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <a class="nav-button" href="index.html">Home</a>
+      <a class="nav-button" href="resume.html">Resume</a>
+      <a class="nav-button" href="portfolio.html">Portfolio</a>
+      <a class="nav-button" href="contact.html">Contact</a>      
+    </nav>
+
+    <!-- MAIN SECTION ABOUT ME-->
+    <main>
+      <h2 class="title">HOME</h2>
+      <hr>
+      <h3>Hello Prospective Employer</h3>
+
+      <p>
+        Okay... okay... I get it, this isn’t the first personal/professional
+        website you’ve seen. But I can assure you that no others are like this.
+        This one’s mine.
+      </p>
+
+      <p>
+        Once you’ve finished reading this little blurb, please browse
+        remaining contents of this site. Perhaps you'll discover
+        the rare traits that your company seeks out are the same traits that I
+        strive to possess.
+      </p>
+      <br * 2>
+      <hr>
+
+      <p class="direction"><i>(Click on a trait below & read how I best embody that trait)</i></p>
+
+      <!-- Determination -->
+      <button class="section-button" onclick="showDetermination()"><h3>Determination</h3></button>
+      <div class="Determination" id="Determination">
+        <p>
+          Are you looking for a developer with determination? Consider this: Straight out of high school, I worked a full-time job in food-service/hospitality while managing to attend community college and pay for it, mostly, out of pocket. My first degree is in Communications and Media Arts. That’s a fancy way of saying, I wanted to move to Hollywood and make it as writer.
+        </p><br>
+
+        <p>
+          Later, I taught myself the basics of C++ using free internet
+          resources. Why? Because I wanted to make video games. I was in my 20’s, I didn’t know any better. In my late 20’s, however, I changed careers from food-service to county government. I used my skills with Microsoft Office and programming fundamentals to build Word forms and Excel Spreadsheets that the office uses today. Whatever I didn’t know, I looked up. I figured it out.
+        </p><br>
+
+        <p>
+          At the end of my early 30’s, I took advantage of union-sponsored college and went back to community college, this time for Computer Information Systems. This go around, I learned C# and Visual Studio. In my free time, I taught myself Python. Boom! Two degrees before the age of 35. If that’s not determination, then I don't know what is.
+        </p><br>
+
+        <p>
+          Youtube Content Creators who work in the tech industry opened my mind
+          to web development. I started learning HTML, CSS and JavaScript on New
+          Year’s Day 2021 and nailed the vanilla fundamentals of each by Valentine’s Day 2021. Google, Stack Overflow, MDN, and W3 Schools became my best friends. 
+        </p>
+        <br *2>
+      </div>
+
+      <!-- Leadership -->
+      <button class="section-button" onclick="showLeadership()"><h3>Leadership</h3></button>
+      <div class="Leadership" id="Leadership">
+          <p>
+            Is leadership a quality your company covets? Look no further. I’ve always stepped up to actualize my supervisor’s vision. I plan, listen & work alongside my team to earn their respect and trust. When needed, I’ve delegated tasks and guidance when indecision or a block has taken hold of my team. I haven’t endured a single feud with any co-worker that resulted in hiccups or delays in productivity. I talk with my team members to set aside any squabbles with each other so that projects get done. I reserve any undue emotion from interfering with reaching the end goals of any project. At the end of the day, results are paramount. Fostering camaraderie is an awesome consolation prize.
+          </p>
+          <br *2>
+      </div>
+      
+      <!-- Supportive/Encouraging -->
+      <button class="section-button" onclick="showSupport()"><h3>Supportive / Encouraging</h3></button>
+      <div class="Support" id="Support">
+        <p>
+            Are you feeling down, dejected or having an episode of imposter’s syndrome? I’ll be the pep talk you need to hear. Everyone in any team has value. You made it this far by your grit and merit after all. Whatever you don’t know, you can learn, that’s what Google and Stack Overflow are for. We’re not all perfect. It’s not easy to look the part either. We all have our role to play to reach our company goals. I always take pleasure in working along side creative staff who also share an enthusiastic curiosity when it comes to problem solving.
+        </p>
+        <br * 2>
+      </div>
+
+      <!-- Hard Worker -->
+      <button class="section-button" onclick="showHardwork()"><h3>Hard Worker</h3></button>
+      <div class="Hardworker" id="Hardworker">
+        <p>
+            I’ve been the “go-to” guy at most of my jobs. You need something done? Give it to me and I’ll figure it out. Need something fixed? I got a small toolbox at my station. You need an office supply? I know where it is and will gladly pause whatever I'm doing to show you where to get one. Why? Because, when I was asked, I meticulously re-organized and labeled everything so that my co-workers can find everything easier, in consolidated areas. They pass my desk and proclaim, “I love the pictures to help me find the staples.” (Yeah, I used image labels for some things.)
+        </p>
+        <br * 2>
+      </div>
+      
+      <!-- Fun-->
+      <button class="section-button" onclick="showFun()"><h3>Fun</h3></button>
+      <div class="Fun" id="Fun">
+        <p>Things I do for recreation</p>
+        <ul>
+            <li>Play drums</li>
+              <ul>
+                <li><img src="" alt="Drum set"></li>
+              </ul>
+            <li>Video Games</li>
+              <ul>
+                <li><img src="" alt="Sonic The Hedgehog"></li>
+              </ul>
+            <li>Karaoke</li>
+              <ul>
+                <li><img src="" alt="Karaoke"></li>
+              </ul>
+            <li>Writing fiction</li>
+              <ul>
+                <li><img src="" alt="Writing"></li>
+              </ul>
+            <li>Making short films</li>
+              <ul>
+                <li><img src="" alt="Filming"></li>
+              </ul>
+            <li>Learning about pop culture throughout history</li>
+              <ul>
+                <li><a href="https://www.youtube.com/user/poparena">PopArena</a></li>
+                <li><a href="https://www.youtube.com/channel/UCjoe3Qo_DymYyBR6X9VxFjQ">Toy Galaxy</a></li>
+                <li><a href="https://www.youtube.com/channel/UCXjmz8dFzRJZrZY8eFiXNUQ">Nerdstalgic</a></li>
+                <li><a href="https://www.youtube.com/c/FringeFam">Jordan Fringe</a></li>
+              </ul>
+        </ul>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>IceCode &#169 <span id="copyrightYear"></span></p>
+    </footer>
+
+    <!-- Auto running scripts when page loads -->
+    <script>
+      /* Age Calculator */
+var birthDate = new Date(1986, 11, 05, 01, 09); /* My birthday 12/05/2986 @ 1:09AM */
+    var today = new Date();
+    
+    var years = (today.getFullYear() - birthDate.getFullYear());
+
+    if (today.getMonth() < birthDate.getMonth() || 
+        today.getMonth() == birthDate.getMonth() && 
+        today.getDate() < birthDate.getDate()) {
+        years--;
+    }
+    document.getElementById("ageCalc").innerHTML = years;
+
+      /*Copyright Year Calculator*/
+    document.getElementById("copyrightYear").innerHTML = today.getFullYear();
+    </script>
+  </body>
+</html>
